@@ -2,7 +2,7 @@
 
 import React, { useState, useCallback } from 'react';
 import { Scanner } from '@yudiel/react-qr-scanner';
-import type { IDetectedBarcode, BarcodeFormat } from '@yudiel/react-qr-scanner';
+import type { IDetectedBarcode } from '@yudiel/react-qr-scanner';
 
 const ScanPage: React.FC = () => {
   const [scanResult, setScanResult] = useState<string>('');
@@ -96,13 +96,6 @@ const ScanPage: React.FC = () => {
             onError={handleError}
             paused={!isScanning}
             formats={supportedFormats}
-            constraints={{
-              video: {
-                width: { ideal: 400 },
-                height: { ideal: 400 },
-                facingMode: 'environment' // 使用后置摄像头
-              }
-            }}
             components={{
               finder: true,
               torch: true,
@@ -118,7 +111,6 @@ const ScanPage: React.FC = () => {
                 height: '100%',
                 objectFit: 'cover'
               },
-              finderBorder: 2
             }}
             scanDelay={300}
             allowMultiple={false}
