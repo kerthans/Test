@@ -1,5 +1,8 @@
 {
   "buildCommand": "pnpm build-storybook",
   "outputDirectory": "storybook-static",
+  "rewrites": [
+    { "source": "/", "destination": "/index.html" }
+  ],
   "installCommand": "pnpm install"
 } 
