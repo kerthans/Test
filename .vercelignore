@@ -1,0 +1,24 @@
+# Storybook 构建文件
+storybook-static/
+.storybook/
+
+# 开发依赖
+node_modules/
+.git/
+
+# 开发文件
+*.log
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 测试文件
+vitest.config.ts
+vitest.shims.d.ts
+*.test.*
+*.spec.*
+
+# 其他
+README.md 

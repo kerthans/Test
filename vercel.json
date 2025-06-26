@@ -1,0 +1,11 @@
+{
+  "buildCommand": "next build",
+  "outputDirectory": ".next",
+  "framework": "nextjs",
+  "installCommand": "pnpm install",
+  "functions": {
+    "src/pages/api/**/*.ts": {
+      "runtime": "nodejs18.x"
+    }
+  }
+} 
