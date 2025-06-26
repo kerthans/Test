@@ -1,6 +1,5 @@
 {
-  "buildCommand": "next build",
-  "outputDirectory": ".next/standalone",
-  "framework": "nextjs",
+  "buildCommand": "pnpm build-storybook",
+  "outputDirectory": "storybook-static",
   "installCommand": "pnpm install"
 } 
